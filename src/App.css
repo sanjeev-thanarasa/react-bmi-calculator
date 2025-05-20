@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bmi-container {
+  width: 800px;
+  height: 500px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  display: flex;
+  overflow: hidden;
+  animation: slideUp 1s ease forwards;
+  display: flex;
+}
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.img-container {
+  flex: 1;
+  background-image: url("assets/diet.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+.bmi-calculator-container {
+  flex: 1.2;
+  padding: 25px 30px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 26px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.text-box {
+  margin-bottom: 20px;
+}
+label {
+  font-weight: 600;
+  display: block;
+  color: #eeeeee;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.35);
+  color: rgb(122, 120, 120);
+  text-shadow: 1px 1px 2px rgba(122, 120, 120, 0.2);
+  font-size: 16px;
+  transition: 0.3s ease;
+  outline: none;
+}
+input::placeholder {
+  color: #eee;
+}
+input:focus {
+  background-color: rgba(255, 255, 255, 0.35);
+  transform: scale(1.02);
+}
+
+button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  color: white;
+  font-size: 17px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+button:hover {
+  transform: scale(1.05);
+}
+
+.bmi {
+  background-color: #3ddc97;
+}
+.bmi:hover {
+  background-color: #28c77d;
+}
+
+.clear {
+  background-color: #e74c3c;
+  margin-left: 10px;
+}
+.clear:hover {
+  background-color: #c0392b;
+}
+
+.result {
+  margin-top: 35px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(13, 128, 78, 0.2);
+  font-size: 18px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+.result p {
+  padding: 4px;
+}
+
+.result p:first-child {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(13, 128, 78);
+  text-shadow: 1px 1px 2px rgba(13, 128, 78, 0.2);
+}
+
+.error {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 0, 0, 0.2);
+  padding: 12px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 8px;
+  animation: shake 0.4s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
