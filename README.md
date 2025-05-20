@@ -56,7 +56,8 @@ A responsive Body Mass Index (BMI) calculator built with React and styled with b
 ## 🌐 Live Demo
 
 🔗 Check out the live app:  
-https://
+https://react-bmi-calculator-omega.vercel.app
+
 
 ---
 
@@ -66,12 +67,14 @@ Pull requests are welcome!
 Fork the repo, improve it, and send a PR.  
 Let’s build better apps together. 💡
 
+
 ---
 
 ## 👨‍💻 Author
 
 Made with 💚 by **Sanjeev Thanarasa**  
 🔗 [GitHub Profile](https://github.com/sanjeev-thanarasa)
+
 
 ---
 
